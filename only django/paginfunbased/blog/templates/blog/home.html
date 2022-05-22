@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    {% for page in pages %}
+    <h2> {{page.title}} </h2>
+    <p> {{page.desc}} </p>
+    <small> {{page.publish_date}} </small>
+    {% endfor %}
+
+    <div>
+        <span>
+            {% if pages.has_previous %}
+            <a href="?page={{pages.previous_page_number}}">Previous</a>
+            {% endif %}
+            <span>{{pages.number}}</span>
+            {% if pages.has_next %}
+            <a href="?page={{pages.next_page_number}}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+</body>
+</html>

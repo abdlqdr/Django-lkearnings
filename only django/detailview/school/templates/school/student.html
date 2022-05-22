@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student_details Page</h1>
+    <h4>{{studen.id}}</h4> 
+    <h4>{{studen.name}}</h4> 
+    <h4>{{studen.roll}}</h4> 
+    <h4>{{studen.course}}</h4> 
+
+    <h1>All students data    </h1>
+    {% for stu in all_student %}
+    <li><a href="{% url 'studentdetail' stu.id %}">{{stu.name}}</a></li>
+    {% endfor %}
+    
+</body>
+</html>

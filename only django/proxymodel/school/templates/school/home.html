@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="4">
+    <h3>Examcenter Information - Original</h3>
+    <th>ID</th>
+    <th>Ename</th>
+    <th>City</th>
+    <th>Roll</th>
+    {% for examcenter in examcenters %}
+    <tr>
+        <td>{{examcenter.id}}</td>
+        <td>{{examcenter.cname}}</td>
+        <td>{{examcenter.city}}</td>
+        <td>{{examcenter.roll}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<table border="4">
+    <h3>My Exam Center Information - Proxy</h3>
+    <th>ID</th>
+    <th>Ename</th>
+    <th>City</th>
+    <th>Roll</th>
+    {% for myexamcenter in myexamcenters %}
+    <tr>
+        <td>{{myexamcenter.id}}</td>
+        <td>{{myexamcenter.cname}}</td>
+        <td>{{myexamcenter.city}}</td>
+        <td>{{myexamcenter.roll}}</td>
+    </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
