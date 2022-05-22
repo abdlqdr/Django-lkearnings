@@ -1,0 +1,2 @@
+# Django-lkearnings
+For convinience
