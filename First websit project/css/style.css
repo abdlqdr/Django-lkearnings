@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+/* ######################### HTML ELEMENNT STYLING ####################### */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+.navigation .ul-items {
+  list-style: none;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.16em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+}
+/* ########################### UTILITY CLASSES STYLING######################### */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lg-heading {
+  font-size: 3.5rem;
+}
+
+.md-heading {
+  font-size: 2.5rem;
+}
+.text-red {
+  color: #e63946;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #333;
+}
+.text-gray {
+  color: #555;
+}
+.bg-dark {
+  background-color: #263238;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.btn-primary {
+  background-color: #fff;
+  border-radius: 10em;
+  font-size: 1.8rem;
+  
+}
+.btn-primary:hover {
+  background-color: #ddd;
+}
+.btn-secondary {
+  border: 2px solid #e63946;
+  background-color: #fff;
+  border-radius: 1.5em;
+}
+.btn-secondary:hover {
+  background-color: #fcf3f2;
+}
+/* ################################ HEADER STYLING ############################### */
+.header .navigation {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.navigation {
+  padding: 1rem;
+}
+.navigation .logo {
+  float: left;
+}
+.navigation .ul-item {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.navigation .ul-items {
+  float: right;
+  margin-top: 1rem;
+}
+.navigation::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.navigation a:hover {
+  border-bottom: 1px solid #f4f4f4;
+}
+.navigation a {
+  padding-bottom: 0.3rem;
+}
+/* ############################## HEADER CONTENT STYLING ######################### */
+.header-content h1 {
+  font-weight: 700;
+}
+nav .header-content a:hover {
+  background-color: #f4f4f4;
+}
+.header-content .line2 {
+  font-size: 1.2rem;
+}
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+/* ############################### MAIN CONTENT STYLING ############################## */
+
+.showcase {
+  padding: 10rem 0;
+  background: #ddd;
+}
+.row {
+  height: 350px;
+  background-color: #fff;
+  margin: 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.308);
+}
+.row1 {
+  margin-bottom: 10rem;
+}
+.row1 .img-box,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+.row1 .text-box,
+.row2 .img-box {
+  float: right;
+  width: 50%;
+}
+.row .img-box,
+.row .text-box {
+  height: 100%;
+}
+.row .text-box {
+  padding: 3rem;
+}
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ########################### FEATURE STYLING ####################### */
+.frow {
+  margin: 10rem 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.315);
+}
+.fblock {
+  float: left;
+  height: 100%;
+  width: 33.3333%;
+  text-align: center;
+  padding: 2.5rem;
+}
+.frow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.frow .fblock1,
+.frow .fblock3 {
+  background-color: #333;
+}
+.frow .fblock2 {
+  background: #e63946;
+  color: #fff;
+}
+.frow .fheading {
+  text-transform: uppercase;
+}
+/* ################################### FOOTER STYLING ################################ */
+.ft-block {
+  background-color: #333;
+}
+.ft-section {
+  text-align: center;
+  padding: 2rem;
+}
+.social-media-links i {
+  font-size: 4rem;
+  margin: 2rem;
+}
+/* ################################### ABOUT STYLING ############################### */
+.main-about {
+  padding: 5rem 0;
+}
+.about-heading {
+  border-bottom: 6px solid #e63946;
+}
+
+/* ############################### INLISTING STYLING ################################# */
+
+.inlisting {
+  text-align: center;
+  margin-top: 2rem;
+}
+.inlisting .about-list1 {
+  float: left;
+  width: 50%;
+  list-style: none;
+}
+.inlisting .about-list2 {
+  float: right;
+  width: 50%;
+  list-style: none;
+}
+
+.inlisting::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.inlisting li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+/* ################################## L2-CONTENT STYLING ############################# */
+.l2-content {
+  margin-top: 3rem;
+}
+.l2-content .about-l2 {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.l2-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.l2-content span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e63946;
+}
+.l2-content p {
+  font-weight: 700;
+  color: #555;
+  font-size: 1.8rem;
+}
+/* ################################## ABOUT-FOOTER ################################# */
+.main-footer {
+  background: #e63946;
+  color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+  margin-top: 3rem;
+  padding: 1em;
+}
+.main-footer .left {
+  float: left;
+  left: 60%;
+}
+.main-footer .right {
+  float: right;
+  right: 40%;
+  padding: 1em 5em;
+}
+.left .left-line {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1em;
+}
+.right .right-line {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0.3em 2em;
+  color: #ddd;
+  border: 4px solid #ddd;
+  letter-spacing: 0.5rem;
+}
+.main-footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ################################## CREDENTIALS STYLING #################################### */
+.contact-row {
+  margin: 5rem 0;
+}
+.contact-row .credential {
+  float: left;
+
+  width: 49%;
+  height: 100%;
+  padding: 1em;
+  background: #f7f7f7;
+}
+.contact-row .contact-form {
+  float: right;
+  width: 49%;
+  height: 100%;
+  padding: 1em;
+  background: #f7f7f7;
+}
+.contact-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.credential img {
+  object-fit: cover;
+  display: inline-block;
+  max-width: 95%;
+  object-position: right;
+}
+.contact-row .credential h2 {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+/* ################################# CONTACT FORM STYLING ############################# */
+.contact-form h1 {
+  border-bottom: 3px solid #ee4758;
+}
+.contact-form .uname {
+  font-size: 1.5em;
+  margin-bottom: 3rem;
+}
+.contact-form .input-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: o.5em;
+}
+.contact-form .uname::after {
+  content: "*";
+  color: #e63946;
+}
+.contact-form textarea {
+  height: 300px;
+  margin-bottom: 1em;
+}
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: #e63946;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ################################### APPLYING MEDIA QUERIES ##################################### */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navigation .logo,
+  .navigation .ul-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .header-content .line1 {
+    display: none;
+  }
+  .header{
+    margin-bottom: 2rem;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+  }
+  .row .text-box,
+  .row .img-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .frow {
+    width: 100%;
+    box-shadow: none;
+  }
+  .frow .fblock {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .frow .fblock1,
+  .frow .fblock2 {
+    margin-bottom: 5rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.329);
+  }
+  .frow .fblock3 {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.329);
+  }
+  .main-footer .left,
+  .main-footer .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-row .credential,
+  .contact-row .contact-form {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .contact-row .credential {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .navigation .logo,
+  .navigation .ul-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .header{
+    margin-bottom: 2rem;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+  }
+  .row .text-box,
+  .row .img-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .frow {
+    width: 100%;
+    box-shadow: none;
+  }
+  .frow .fblock {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .frow .fblock1,
+  .frow .fblock2 {
+    margin-bottom: 5rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.329);
+  }
+  .frow .fblock3 {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.329);
+  }
+  .main-footer .left,
+  .main-footer .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-row .credential,
+  .contact-row .contact-form {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .contact-row .credential {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .row .text-box h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .navigation {
+    height: 90vmax;
+  }
+}

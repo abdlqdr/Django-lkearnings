@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Welcome to Fatima Travels</title>
+  </head>
+  <body>
+    
+    <div
+      id="success"
+      class="alert alert-success alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Success!</strong> Your travel request is successfully submitted
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div
+      id="failure"
+      class="alert alert-danger alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Sorry!</strong> Your travel request is failed to submitted
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="container my-3">
+      <h1>Fatima Travels Desk</h1>
+      <form action="" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Enter Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+          <div class="form-text invalid-feedback" id="nameValid">
+            Please provide a valid name 2-10 characters.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Enter Your Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter Your Email"
+          />
+          <div class="form-text invalid-feedback" id="emailValid">
+            Please provide a valid email id.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="Car">Select Your Car</label>
+          <select class="form-select" id="Car">
+            <option value="1">Desire</option>
+            <option value="2">Etios</option>
+            <option value="3">Ford</option>
+            <option value="4">Honda</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Enter Your Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="Enter Your Phone Number"
+          />
+          <div class="form-text invalid-feedback" id="emailValid">
+            Please provide a valid phone no should be 10 digit long.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Enter Your Address</label>
+          <textarea
+            class="form-control"
+            id="address"
+            name="address"
+            rows="3"
+            placeholder="Enter Your Address"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Any Other Message</label>
+          <textarea
+            class="form-control"
+            id="address"
+            name="address"
+            rows="3"
+          ></textarea>
+        </div>
+        <button id="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+   
+    <script src="index.js"></script>
+  </body>
+</html>
