@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* utility class */
+.btn{
+    padding: 7px 15px;
+    border-radius: 15px;
+    border:none;
+    margin: 10px;
+    font-size: 15px;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(102, 233, 102);
+}
+.h-primary{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+    text-align: center;
+}
+.para{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+/* Nvigation Bar  */
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+   
+}
+.navbar::before{
+    content: '';
+    height: 100% ;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black ;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+.navbar .logo{
+    width: 70px;
+    margin: 10px 15px;
+}
+.logo img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    text-decoration: none;
+    list-style: none;
+    padding: 25px 11px;
+    font-size: 1.2rem;
+   
+}
+.nav-items li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+.nav-items li a:hover{
+    
+    background-color: white;
+    color: black ;
+    opacity: ;
+}
+
+/* Home secton  */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/nav_bg.jpg'),  no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+/* services section */
+.services-container{
+    padding: 10px 15px;
+
+}
+.services{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    border: 3px solid rgb(146, 27, 27);
+    background: rgb(250, 225, 225);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px 10px;
+}
+.box img{
+    width: 200px;
+    display: block;
+}
+.box p{
+    text-align: center;
+}
+
+/* client section */
+
+.client-section{
+    
+    padding: 2rem 0;
+    position: relative;
+
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/client.jpg'),  no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+    
+
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.client-items{
+    width: 120px;
+    padding: 15px;
+}
+.client-items img{
+    display: block;
+    width: 100%;
+    
+
+}
+/* contact section  */
+.contact{
+    padding: 2rem 0;
+    margin-top: 2rem;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/contact\ us.jpg'),  no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+.contact-box{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 0.5rem ;
+}
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-box label{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 40%;
+}
+
+/* footer section  */
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

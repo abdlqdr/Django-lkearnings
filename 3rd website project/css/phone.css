@@ -1,0 +1,60 @@
+/* utility clases */
+.h-primary{
+    font-size: 26px;
+}
+
+
+/* navbar  */
+.navbar{
+    flex-direction: column;
+    align-items: center;
+    
+}
+.navbar ul li a{
+    font-size: 0.8rem;
+    padding: 0px 5px;
+}
+/* home section  */
+.home{
+    height: 490px;
+   padding: 2px 15px;
+   
+    
+}
+.home::before{
+    height: 500px;
+}
+
+.home p{
+    font-size: 13px;
+}
+
+
+/* service section  */
+.services{
+    flex-direction: column;
+    margin-top: 1rem;
+    
+
+}
+.box{
+    margin-bottom: 5px 0;
+}
+
+/* client section  */
+.clients{
+   
+    flex-wrap: wrap;
+}
+.client-items{
+    width: 100px;
+
+}
+
+
+
+/* contact section  */
+.contact-box form{
+    width: 80%;
+}
+
